@@ -13,7 +13,7 @@
 		>
 			<section
 				id="discover"
-				class=" flex h-full w-full flex-col  justify-around items-center gap-2 invisible absolute "
+				class=" flex h-full w-full flex-col  justify-around items-center gap-2  "
 			>
 				<div class="relative w-full -top-2
                 h-[55%] overflow-hidden rounded-3xl shadow-lg shadow-orange-200">
@@ -36,8 +36,45 @@
 				</div>
 			</section>
 
-            <section class="w-full h-full bg-red-300">
+            <section class=" flex h-full w-full flex-col  px-5 py-8 items-center gap-2 invisible absolute " id="singin">
+                <section class="text-center flex flex-col gap-2" >
+                   <h2 id="hello" class="font-base text-3xl text-[#363147]">Hello Again!</h2>
+                <h3 id="welcome" class="text-lg font-light leading-none text-[#706D7D]	"> Welcome back you've <hr> been missed!</h3> 
+                </section>
                 
+                <form action="#" class="mx-auto flex flex-col gap-4 h-auto w-full relative top-5">
+                    <input type="text" placeholder="Enter username" class="inputs">
+                    <input type="password" placeholder="Password" class="inputs">
+
+                    <span class="text-right w-full h-auto inline-block text-[#7A7E85]">Recovery Password</span>
+                    <button type="submit" class="inputs bg-orange-400 text-white text-lg shadow-lg shadow-orange-300 relative top-3" >Sign in</button>
+                </form>
+
+                <section class="flex h-auto w-full  items-center justify-center gap-3 relative top-16">
+                    <span class="inline-block bg-gradient-to-l from-[#B9BCC5] to-transparent h-1 w-1/4"></span>
+                    <span class="text-[#7A7E85]">Or continue with</span>
+                    <span  class="inline-block bg-gradient-to-r from-[#B9BCC5] to-transparent h-1 w-1/4"></span>
+                </section>
+
+                <section class="h-auto w-full flex mx-auto justify-evenly items-center gap-5 relative top-24">
+                    <div class="social"><img src="./img/google.png" alt="google" class="w-7"></div>
+                    <div class="social"><img src="./img/apple.png" class="w-9" alt="google"></div>
+                    <div class="social"><img src="./img/facebook.png" class="w-7" alt="google"></div>
+                    
+                    
+                    
+                </section>
+                
+
+
+
+                <section class="relative top-32">
+                    <span class="text-[#7A7E85]">Not a member? <a href="#" class="text-blue-500">Register now</a></span>
+                </section>
+
+                
+
+
             </section>
 		</main>
         <script src="./script.js"></script>

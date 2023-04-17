@@ -7,3 +7,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.inputs{
+    @apply outline-none px-3 py-4 w-full h-auto rounded-xl
+}
+
+.social{
+    @apply h-auto w-auto px-5 py-2  rounded-lg border-[#F4F8FC] border-2 flex justify-center items-center
+}
