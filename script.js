@@ -3,8 +3,8 @@ const sing_in = document.getElementById("sign_in");
 const singin = document.getElementById("singin");
 const singup = document.getElementById("singup");
 const back = document.getElementById("back");
-const img = document.querySelector(".img");
-const prueb = document.querySelector(".prueb");
+const img = document.querySelector("#img");
+const prueb = document.querySelector("#prueb");
 
 const animationsToSingin = () => {
     let tl = gsap.timeline()
@@ -20,6 +20,19 @@ const animationsToSingin = () => {
     tl.to("#notmember", { duration: 1, text: "Not a member? ", ease: "none"});
     tl.to("#registernow", {duration: 1, text: " Register Now", ease: "none"});
 };
+const animationsToSingUp = () => {
+    let tl = gsap.timeline()
+	tl.from(".show3", {
+        duration: 2,
+		scale: 0.5,
+		opacity: 0,
+		delay: 0.2,
+		stagger: 0.2,
+		ease: "elastic",
+		force3D: true,
+	});
+    
+};
 
 
 
@@ -29,10 +42,11 @@ register.addEventListener("click", () => {
 	singup.classList.remove("invisible");
 	back.classList.remove("invisible");
 	singup.classList.remove("absolute");
-	img.classList.add("md:relative");
-	img.classList.add("md:visible");
+	
+	
 	prueb.classList.add("md:relative");
 	prueb.classList.add("md:visible");
+    animationsToSingUp();
 });
 sing_in.addEventListener("click", () => {
 	document.getElementById("discover").classList.add("invisible");
@@ -55,6 +69,8 @@ back.addEventListener("click", () => {
 	singup.classList.add("absolute");
 	img.classList.remove("md:relative");
 	img.classList.remove("md:visible");
+    prueb.classList.remove("md:relative");
+    prueb.classList.remove("md:visible");
 });
 
 //animaciones
@@ -67,3 +83,4 @@ gsap.from(".show", {
 	ease: "elastic",
 	force3D: true,
 });
+
