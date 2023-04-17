@@ -9,11 +9,11 @@
 	</head>
 	<body>
 		<main
-			class="relative mx-auto flex h-screen w-screen flex-col items-center justify-center border-4 border-white bg-[#E7ECF5] p-1"
+			class="relative mx-auto flex h-screen w-screen flex-col items-center justify-center border-4 border-white bg-[#E7ECF5] p-1 overflow-hidden"
 		>
 			<section
 				id="discover"
-				class=" flex h-full w-full flex-col  justify-around items-center gap-2  "
+				class=" flex h-full w-full flex-col  justify-around items-center gap-2 md:flex-row "
 			>
 				<div class="relative w-full -top-2
                 h-[55%] overflow-hidden rounded-3xl shadow-lg shadow-orange-200">
@@ -29,7 +29,7 @@
 						Explore all the most exiting jobs roles based on your interest And your study mayor
 					</p>
 				</div>
-
+				
 				<div class="mx-auto h-auto w-auto border-white border-2 flex justify-between items-center rounded-xl overflow-hidden">
 					<span class="bg-white text-lg px-7 py-2" id="register">Register</span>
 					<span class="bg-[#ECEAF0] text-lg px-7 py-2" id="sign_in">Sign in</span>
@@ -69,13 +69,60 @@
 
 
                 <section class="relative top-32">
-                    <span class="text-[#7A7E85]">Not a member? <a href="#" class="text-blue-500">Register now</a></span>
+                    <span class="text-[#7A7E85]">Not a member <a href="#" class="text-blue-500">Register now</a></span>
                 </section>
 
                 
 
 
             </section>
+
+
+            <section class=" flex h-full w-full flex-col  px-5 py-8 items-center gap-2 invisible absolute  " id="singup">
+                <section class="text-center flex flex-col gap-2" >
+                   <h2 id="helloSingup" class="font-base text-3xl text-[#363147]">Welcome !</h2>
+                <h3 id="welcomeSingup" class="text-lg font-light leading-none text-[#706D7D]	"> 
+					It is a pleasure for us  <hr> to have you here!</h3> 
+                </section>
+                
+                <form action="#" class="mx-auto flex flex-col gap-4 h-auto w-full relative top-5">
+                    <input type="text" placeholder="Enter username" class="inputs">
+                    <input type="password" placeholder="Password" class="inputs">
+                    <input type="password" placeholder="Repeat Password" class="inputs">
+
+                    <span class="text-right w-full h-auto inline-block text-blue-400">Already a member?</span>
+                    <button type="submit" class="inputs bg-orange-500 text-white text-lg shadow-lg shadow-orange-300 relative top-3" >Sign up</button>
+                </form>
+
+                <section class="flex h-auto w-full  items-center justify-center gap-3 relative top-16">
+                    <span class="inline-block bg-gradient-to-l from-[#B9BCC5] to-transparent h-1 w-1/4"></span>
+                    <span class="text-[#7A7E85]">Or continue with</span>
+                    <span  class="inline-block bg-gradient-to-r from-[#B9BCC5] to-transparent h-1 w-1/4"></span>
+                </section>
+
+                <section class="h-auto w-full flex mx-auto justify-evenly items-center gap-5 relative top-24">
+                    <div class="social"><img src="./img/google.png" alt="google" class="w-7"></div>
+                    <div class="social"><img src="./img/apple.png" class="w-9" alt="google"></div>
+                    <div class="social"><img src="./img/facebook.png" class="w-7" alt="google"></div>
+                    
+                    
+                    
+                </section>
+                
+
+
+
+               
+
+                
+
+
+            </section>
+
+<div class="absolute top-6 left-5 w-7 invisible" id="back">
+
+	<svg fill="#363147" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-3.65 -3.65 52.88 52.88" xml:space="preserve" stroke="#363147" stroke-width="0.0004558"><g id="SVGRepo_bgCarrier" stroke-width="0" ></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M45.506,33.532c-1.741-7.42-7.161-17.758-23.554-19.942V7.047c0-1.364-0.826-2.593-2.087-3.113 c-1.261-0.521-2.712-0.229-3.675,0.737L1.305,19.63c-1.739,1.748-1.74,4.572-0.001,6.32L16.19,40.909 c0.961,0.966,2.415,1.258,3.676,0.737c1.261-0.521,2.087-1.75,2.087-3.113v-6.331c5.593,0.007,13.656,0.743,19.392,4.313 c0.953,0.594,2.168,0.555,3.08-0.101C45.335,35.762,45.763,34.624,45.506,33.532z"></path> </g> </g></svg>
+</div>
 		</main>
         <script src="./script.js"></script>
 	</body>
