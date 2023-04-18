@@ -5,6 +5,7 @@ const singup = document.getElementById("singup");
 const back = document.getElementById("back");
 const img = document.querySelector("#img");
 const prueb = document.querySelector("#prueb");
+const registernow = document.getElementById("registernow");
 
 const animationsToSingin = () => {
     let tl = gsap.timeline()
@@ -72,6 +73,18 @@ back.addEventListener("click", () => {
     prueb.classList.remove("md:relative");
     prueb.classList.remove("md:visible");
 });
+
+registernow.addEventListener("click", () => {
+    document.getElementById("discover").classList.remove("invisible");
+	document.getElementById("discover").classList.remove("absolute");
+	singin.classList.add("invisible");
+    singin.classList.add("absolute");
+    back.classList.add("invisible");
+    img.classList.remove("md:relative");
+	img.classList.remove("md:visible");
+
+});
+
 
 //animaciones
 gsap.from(".show", {
